@@ -11,13 +11,15 @@
 
 .sidebar {
   background-color: #ccc;
-  width: 15vw;
+  /* width: 15vw; */
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
 }
 
 .sidebar nav {
-  padding: 15px;
+  padding: 40px;
 }
 
 .sidebar nav li {
@@ -42,12 +44,12 @@
 
 .infoContainer {
   /* background-color: rgb(36, 184, 164); */
-  display: flex;
-  justify-content: space-around;
+  margin: 124px auto 0px auto;
+  padding: 30px;
   height: 58vh;
   width: 80vw;
-  margin: 124px auto;
-  padding: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .devInfo {
@@ -99,7 +101,8 @@
 }
 
 .devPic img {
-  height: 58vh;
+  height: 25rem;
+  float:right ;
 }
 
 .contactform {
@@ -118,12 +121,11 @@
 .contactform h1 {
   font-family: "Ubuntu", sans-serif;
   color: dodgerblue;
-  padding: 0px 0px;
   font-weight: 300;
 }
 
 .contactform form{
-  margin-top: 8vh;
+  margin-top: 5vh;
 }
 
 .contactform form div {
@@ -183,12 +185,14 @@
   width: 11vh;
 }
 
-.header h1{
-  margin: 40px 0px;
-  text-align: center;
+.header{
+  margin: 70px 10px;
   color: dodgerblue;
   /* font-family: "Source Code Pro", monospace; */
   font-family: "Ubuntu", sans-serif;
+  background-color:black;
+  width: fit-content;
+  border-radius: 0 2.5rem 0 2.5rem;
 }
 
 .blogcontainer h2{
@@ -211,19 +215,21 @@
   font-family: "Source Code Pro", monospace;
   color: black;
   font-weight: bold;
+  text-align: center;
 }
 
 .blogitems h3{
   color:dodgerblue;
-  margin: 30px 35px 10px 0px;
+  margin: 30px 0px 10px 0px;
 }
 
-.introcontainer h1{
-  background-color:rgb(54, 53, 53);
+.introcontainer h3{
+  margin: 5px 30px;
 }
 
 .introcontainer p{
   margin: 0 30px;
+  color: dodgerblue;
 }
 
 .intropic{
@@ -233,7 +239,39 @@
 }
 
 .intropic img{
-  width: 40%;
+  width: 35rem;
   border-radius: 1.5rem;
-  box-shadow:dodgerblue;
+  /* box-shadow:dodgerblue; */
+  margin: 10px 0 5px 0;
+  filter: drop-shadow(-16px -16px 10px rgb(138, 181, 223));
+  /* filter: drop-shadow(.5rem .5rem 1rem dodgerblue); */
+}
+
+.sidebarGo{
+  transform: translate(-240px, 0px);
+  position: absolute;
+}
+
+.hamburger{
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  left: 20px;
+}
+
+.cross{
+  margin-left: 130px;
+}
+
+@media (max-width: 860px) {
+  .infoContainer{
+    flex-wrap: wrap;
+  }
+  /* .sidebar{
+    transform: translate(-240px, 0px);
+    position: absolute;
+  } */
+  .devPic{
+    display: none;
+  }
 }

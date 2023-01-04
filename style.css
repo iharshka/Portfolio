@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+.container {
+  display: flex;
+  font-size: 11px;
+}
+
 .sidebar {
   background-color: #ccc;
   /* width: 15vw; */
@@ -24,7 +29,7 @@
 
 .sidebar nav li {
   list-style: none;
-  font-size: 20px;
+  font-size: 1.99em;
   padding: 30px 0;
 }
 
@@ -33,9 +38,6 @@
   color: black;
 }
 
-.container {
-  display: flex;
-}
 
 /* .main {
   background-color: yellow;
@@ -44,38 +46,37 @@
 
 .infoContainer {
   /* background-color: rgb(36, 184, 164); */
-  margin: 124px auto 0px auto;
-  padding: 30px;
+  margin: 9em auto 0em 9em;
+  padding: 3em;
   height: 58vh;
   width: 80vw;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
 .devInfo {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 11px;
 }
 
 .hello {
-  font-size: 3.1em;
+  font-size: 3em;
   font-family: "Source Code Pro", monospace;
-  margin: 10px 0px;
+  margin: 0.5em 0;
 }
 
 .name {
   font-size: 2.9em;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-  margin: 8px 0px;
+  margin-bottom: 0.5em;
 }
 
 .about {
   font-size: 1.85em;
   font-family: "Source Code Pro", monospace;
-  margin: 6px 0px;
+  margin-bottom: 0.6em;
 }
 
 .moreabout {
@@ -85,7 +86,7 @@
 }
 
 .buttons button {
-  margin: 3em 0.45em;
+  margin: 2em 0 10em 0.45em;
   padding: 0.9em;
   font-size: 1.15em;
   color: white;
@@ -103,8 +104,12 @@
 }
 
 .devPic img {
-  height: 25rem;
-  float:right ;
+  height: 25em;
+  float: right ;
+  margin: 0 3em 0 3em;
+  border-radius: 45%; 
+  border: 3px solid #54d5fd;
+  border-bottom: 0;
 }
 
 .contactform {
@@ -145,7 +150,7 @@
   border-radius: 2.8vh;
   border-color: dodgerblue;
   height: 3.5vh;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 1vh;
   color: rgb(15, 15, 15);
   margin-top: 5px;;
@@ -202,7 +207,7 @@
   /* font-family: "Source Code Pro", monospace; */
   /* font-family: "Ubuntu", sans-serif; */
   font-family: 'Sevillana', cursive;
-  font-size: 30px;
+  font-size: 3em;
   color:coral;
 }
 
@@ -223,10 +228,6 @@
 .blogitems h3{
   color:dodgerblue;
   margin: 30px 0px 10px 0px;
-}
-
-.introcontainer{
- font-size: 11px;
 }
 
 .introcontainer h3{
@@ -267,24 +268,64 @@
 }
 
 .cross{
-  margin-left: 130px;
+  margin-left: 12.5em;
+}
+
+.footer-class{
+  margin-top: 6.5em;
+  background-color: #54d5fd;
+  text-align: center;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+  margin: 1.1em 0;
+  color: black;
+}
+
+.socials i{
+  width: 1.5em;
+  color: black;
+}
+
+.footer{
+  position: fixed;
+}
+
+.footer-class h5{
+  color: whitesmoke;
+  font-size: 1em;
+  padding: 0.5em 0 0.2em 0;
+}
+
+#ff{
+  color:black;
+}
+
+.credit h5 a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media (max-width: 860px) {
+  .container{
+    font-size: 7px;
+  }
   .infoContainer{
     flex-wrap: wrap;
+    margin-left: auto;
   }
   /* .sidebar{
     transform: translate(-240px, 0px);
     position: absolute;
   } */
   .devInfo{
-    font-size: 10px;
+    font-size: 9px;
   }
-  .buttons, .introcontainer{
-    font-size: 7px;
-  }
-  .devPic{
+  .devPic img{
     display: none;
+    /* <img src="favicon2.webp" width="75">; */
   }
 }

@@ -112,11 +112,17 @@
   border-bottom: 0;
 }
 
+.contactpage{
+  display: flex;
+  flex-direction: row;
+}
+
 .contactform {
   font-family: "Roboto Condensed", sans-serif;
   /* font-family: 'Brygada 1918', serif; */
-  color: black;
-  padding: 40px 0 0 65px;
+  margin-top: 10em;
+  justify-content: center;
+  /* padding: 40px 0 0 65px; */
 }
 
 .mb-3 {
@@ -124,15 +130,26 @@
   flex-direction: column;
 }
 
+.mb-3 label{
+  padding-left: 0.3em;
+}
+
 .contactform h1 {
-  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  text-align: center;
   color: dodgerblue;
-  font-weight: 300;
-  margin: 30px;
+  font-size: 3em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  border-radius: 2em;
 }
 
 .contactform form{
-  margin: 10px 40px;
+  background-color: white;
+  margin: 4em;
+  color: black;
+  font-size: 1.5em;
+  border-radius: 2em;
 }
 
 .contactform form div {
@@ -140,7 +157,6 @@
 }
 
 #emailhelp {
-  font-size: 0.92em;
   color: grey;
   margin: 0px 5px;
 }
@@ -150,7 +166,7 @@
   border-radius: 2.8vh;
   border-color: dodgerblue;
   height: 3.5vh;
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 1vh;
   color: rgb(15, 15, 15);
   margin-top: 5px;;
@@ -170,36 +186,45 @@
 }
 
 .btn {
-  margin: 3vh 0 0 11.7vh;
-  height: 6.5vh;
-  width: 12vh;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.92vh;
-  color: white;
-  background-color: dodgerblue;
-  border-radius: 3.1vh;
+  margin: 2em 0 5em 90px;
+  font-size: 0.95em;
+  padding: 0.69em;
+  border-radius: 1.2em;
   border-style: none;
+  background-color: dodgerblue;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
   cursor: pointer;
 }
 
 .btn:hover {
-  font-size: 1.8vh;
+  font-size: 0.9em;
   font-weight: 300;
+  padding: 0.6em;
+  border-radius: 1.3em;
   color: white;
   background-color: rgb(7, 90, 173);
-  border-radius: 3.5vh;
-  height: 6.25vh;
-  width: 11vh;
+}
+
+.doodle img{
+  margin: 25em 0 0 20em;
+  width: 40em;
+  border-radius: 1.5rem;
+  filter: drop-shadow(-10px -10px 10px rgb(138, 181, 223));
+  border: 0.3px solid dodgerblue;
 }
 
 .header{
-  margin: 7em 0 3em 1.5em;
+  margin: 4.5em 0 3em 1.5em;
   color: dodgerblue;
   /* font-family: "Source Code Pro", monospace; */
   font-family: "Ubuntu", sans-serif;
   background-color:black;
   width: fit-content;
-  border-radius: 0 2.5rem 0 2.5rem;
+  /* border-radius: 0 2.5rem 0 2.5rem; */
+  border-radius: 2.5em;
+  border-bottom-right-radius: 0.7em;
+  border-top-right-radius: 0.9em;
 }
 
 .blogcontainer h2{
@@ -215,6 +240,7 @@
   margin: 0px 35px 0 30px;
   /* font-family: "Roboto Condensed", sans-serif; */
   font-weight: 500;
+  font-size: 1.3em;
 }
 
 .blogitems{
@@ -223,6 +249,7 @@
   color: black;
   font-weight: bold;
   text-align: center;
+  font-size: 1.2em;
 }
 
 .blogitems h3{
@@ -230,14 +257,15 @@
   margin: 30px 0px 10px 0px;
 }
 
-.introcontainer h3{
+.introcontainer h2{
   margin: 0 3em 1em 3em;
+  font-size: 1.3em;
 }
 
 .introcontainer p{
-  margin: 0 3em 3em 3em;
+  margin: 1.5em 3em 3em 3em;
   color: dodgerblue;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .intropic{
@@ -247,11 +275,10 @@
 }
 
 .intropic img{
-  width: 40em;
+  width: 30em;
   border-radius: 1.5rem;
   /* box-shadow:dodgerblue; */
-  margin: 0 0 1em 0;
-  filter: drop-shadow(-16px -16px 10px rgb(138, 181, 223));
+  filter: drop-shadow(-10px -10px 10px rgb(138, 181, 223));
   /* filter: drop-shadow(.5rem .5rem 1rem dodgerblue); */
 }
 
@@ -309,9 +336,13 @@
   font-weight: bold;
 }
 
+.skills{
+
+}
+
 @media (max-width: 860px) {
   .container{
-    font-size: 7px;
+    font-size: 9px;
   }
   .infoContainer{
     flex-wrap: wrap;
@@ -321,11 +352,20 @@
     transform: translate(-240px, 0px);
     position: absolute;
   } */
-  .devInfo{
+  /* .devInfo{
     font-size: 9px;
-  }
+  } */
   .devPic img{
     display: none;
     /* <img src="favicon2.webp" width="75">; */
+  }
+  .contactpage{
+    display: flex;
+    flex-direction: column;
+  }
+  .doodle img{
+    margin: 3em 4em;
+    width: 35em;
+    border-radius: 1.5rem;
   }
 }

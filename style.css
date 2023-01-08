@@ -86,7 +86,7 @@
 }
 
 .buttons button {
-  margin: 2em 0 10em 0.45em;
+  margin: 2em 0 5em 0.45em;
   padding: 0.9em;
   font-size: 1.15em;
   color: white;
@@ -104,12 +104,13 @@
 }
 
 .devPic img {
-  height: 25em;
+  height: 27em;
   float: right ;
-  margin: 0 3em 0 3em;
-  border-radius: 45%; 
+  margin: 0 4em 0 3em;
+  border-radius: 15%; 
   border: 3px solid #54d5fd;
   border-bottom: 0;
+  filter: drop-shadow(-8px -5px 10px rgb(138, 181, 223));
 }
 
 .contactpage{
@@ -147,6 +148,7 @@
 .contactform form{
   background-color: white;
   margin: 4em;
+  margin-left: 5em;
   color: black;
   font-size: 1.5em;
   border-radius: 2em;
@@ -186,7 +188,7 @@
 }
 
 .btn {
-  margin: 2em 0 5em 90px;
+  margin: 2em 0 5em 100px;
   font-size: 0.95em;
   padding: 0.69em;
   border-radius: 1.2em;
@@ -207,7 +209,7 @@
 }
 
 .doodle img{
-  margin: 25em 0 0 20em;
+  margin: 30em 0 0 25em;
   width: 40em;
   border-radius: 1.5rem;
   filter: drop-shadow(-10px -10px 10px rgb(138, 181, 223));
@@ -258,27 +260,28 @@
 }
 
 .introcontainer h2{
-  margin: 0 3em 1em 3em;
-  font-size: 1.3em;
+  margin: 0 3em 1em 1em;
+  font-size: 1.7em;
 }
 
 .introcontainer p{
-  margin: 1.5em 3em 3em 3em;
+  margin: 1.5em 0em 3em 1.1em;
   color: dodgerblue;
   font-size: 1.5em;
 }
 
-.intropic{
+.intropage{
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .intropic img{
-  width: 30em;
-  border-radius: 1.5rem;
+  width: 25em;
   /* box-shadow:dodgerblue; */
-  filter: drop-shadow(-10px -10px 10px rgb(138, 181, 223));
+  filter: drop-shadow(-1px -1px 10px rgb(138, 181, 223));
+  border-radius: 45%; 
+  border: 3px solid #54d5fd;
   /* filter: drop-shadow(.5rem .5rem 1rem dodgerblue); */
 }
 
@@ -299,7 +302,7 @@
 }
 
 .footer-class{
-  margin-top: 6.5em;
+  margin-top: 17.5em;
   background-color: #54d5fd;
   text-align: center;
 }
@@ -337,7 +340,7 @@
 }
 
 .skills{
-
+  
 }
 
 @media (max-width: 860px) {
@@ -356,8 +359,18 @@
     font-size: 9px;
   } */
   .devPic img{
-    display: none;
+    /* display: none; */
     /* <img src="favicon2.webp" width="75">; */
+    height: 15em;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em auto;
+  }
+  .intropic img{
+    width: 20em;
+  }
+  .intropic{
+    width: 18em;
   }
   .contactpage{
     display: flex;

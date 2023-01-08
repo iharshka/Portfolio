@@ -3,10 +3,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html::-webkit-scrollbar{
+  width: 0.4vw;
+}
+
+html::-webkit-scrollbar-thumb{
+  border-radius: 1.1em;
+  background: linear-gradient(white, #54d5fd);
+  height: 1em;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: white;
 }
 
 .container {
@@ -17,7 +32,7 @@
 .sidebar {
   /* background-color: #ccc; */
   /* width: 15vw; */
-  background-color: dodgerblue;
+  background-color: #54d5fd;
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
   transition: transform 0.3s ease-in-out;
@@ -109,11 +124,28 @@
 .devPic img {
   height: 27em;
   float: right ;
-  margin: 5em 4em 0 3em;
+  margin: 5em 4em 0.5em 3em;
   border-radius: 15%; 
   border: 3px solid #54d5fd;
   border-bottom: 0;
   filter: drop-shadow(-8px -5px 10px rgb(138, 181, 223));
+}
+
+/*devpic text*/
+.pp{ 
+  font-size: 1.35em;
+  font-family: cursive;
+  font-weight: 100;
+  margin-left: 4em;
+  margin-right: 3em;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background: linear-gradient(to right, #000, #54d5fd);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.pp > span{
+  -webkit-text-fill-color: initial;
 }
 
 .contactpage{
@@ -138,7 +170,7 @@
   padding-left: 0.3em;
 }
 
-.contactform h1 {
+.contact-header {
   background-color: white;
   text-align: center;
   color: dodgerblue;
@@ -212,11 +244,17 @@
 }
 
 .doodle img{
-  margin: 30em 0 0 28em;
+  margin: 20em 0 0 20em;
   width: 40em;
   border-radius: 1.5rem;
   filter: drop-shadow(-8px -8px 10px rgb(138, 181, 223));
   border: 0.3px solid dodgerblue;
+}
+
+.belowdevpic{
+  margin-left: 6em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
 }
 
 .header{
@@ -282,7 +320,7 @@
 .intropic img{
   width: 25em;
   /* box-shadow:dodgerblue; */
-  filter: drop-shadow(-1px -1px 10px rgb(138, 181, 223));
+  filter: drop-shadow(-0.5px 0px 10px rgb(138, 181, 223));
   border-radius: 45%; 
   border: 3px solid #54d5fd;
   /* filter: drop-shadow(.5rem .5rem 1rem dodgerblue); */
@@ -361,6 +399,14 @@
   margin-top: 1em;
 }
 
+.quote{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 1em;
+  color: white;
+  font-size: 1.5em;
+}
+
 @media (max-width: 860px) {
   .container{
     font-size: 9px;
@@ -393,12 +439,15 @@
     flex-direction: column;
   }
   .doodle img{
-    margin: 3em 0 0 5em;
+    margin: 2.5em 0 0 5em;
     width: 35em;
     border-radius: 1.5rem;
   }
   .skillcontainer, .toolscontainer{
     width: 80vw;
     margin: 0em 5em;
+  }
+  .belowdevpic{
+    margin-left: 0em;
   }
 }

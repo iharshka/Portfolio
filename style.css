@@ -100,7 +100,7 @@ html::-webkit-scrollbar-track {
 
 /*Event Gallery*/
 
-/* *::after, *::before{
+*::after, *::before{
   box-sizing: border-box;
 }
 
@@ -108,25 +108,79 @@ html::-webkit-scrollbar-track {
   margin: 0;
 }
 
+/* .slides-header syled in contact page styles */
+
 .carousel{
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   position: relative;
+  box-sizing: border-box;
+  margin-top: 10rem;
 }
 
-.slider{
+.carousel > ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slides{
   position: absolute;
   inset: 0;
   opacity: 0;
+  /* top: 10rem; */
+  left: 26.4rem;
+  transition: 700ms opacity ease-in-out;
+  transition-delay: 200ms;
 }
 
-.slider > img{
-  displa
+.slides > img{
+  display: block;
+  width: 60%;
+  height: 70%;
+  object-fit: cover;             /* it fits the imge in given width & height maintaining aspect ratio */
+  object-position: center;
+  position: absolute;
+  z-index: 3;
 }
 
-.slider[data-active]{
+.slides[data-active] {
   opacity: 1;
-} */
+  /* transition: 200ms opacity ease-in; */ 
+  transition-delay: 0ms;
+}
+
+.carousel-button{
+  position: absolute;
+  z-index: 2;
+  background-color: none;
+  border: none;
+  font-size: 2rem;
+  top: 35%;
+  transform: translateY(-50%);
+  color:rgba(22, 22, 22, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0 0.5rem;
+  background-color: rgba(245, 235, 235, 0.2); 
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+  background-color: rgb(122, 122, 122);
+}
+
+.carousel-button:focus{
+  font-size: 1.88rem;
+}
+
+.carousel-button.prev{
+  left: 23rem;
+}
+
+.carousel-button.next{
+  right: 22.5rem;
+}
 
 /* Home Page */
 
@@ -363,7 +417,8 @@ html::-webkit-scrollbar-track {
   padding-left: 0.3em;
 }
 
-.contact-header {
+.contact-header,
+.slides-header {
   background-color: white;
   text-align: center;
   color: dodgerblue;
@@ -372,6 +427,11 @@ html::-webkit-scrollbar-track {
   font-weight: 400;
   border-radius: 2em;
 }
+
+.slides-header{
+  margin: 10rem 0 0 0;
+  font-size: 2em;
+ }
 
 .contactform form {
   background-color: white;
@@ -543,5 +603,39 @@ html::-webkit-scrollbar-track {
   }
   .belowdoodle {
     margin-left: 0em;
+  }
+  .carousel{
+    width: 100vw;
+    height: 100vh;
+  }
+  .slides-header{
+    margin: 4rem 0 0 0;
+    font-size: 2em;
+   }
+  .slides{
+    /* top: 10rem; */
+    left: 1em;
+  }
+  .slides > img{
+    display: block;
+    width: 95%;
+    height: 40%;
+    object-fit: cover;    
+    object-position: center; 
+    position: relative;
+    z-index: 1;    
+  }
+  .carousel-button{
+    top: 15%;
+  }
+   .carousel-button.prev{
+    left: .3rem;
+    position: relative;
+    z-index: 2;
+  }
+  .carousel-button.next{
+    right: .3rem;
+    /* position: relative; */
+    z-index: 2;
   }
 }

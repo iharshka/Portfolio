@@ -110,12 +110,16 @@ html::-webkit-scrollbar-track {
 
 /* .slides-header syled in contact page styles */
 
+.body > section{
+  height: fit-content;
+}
+
 .carousel{
-  width: 100vw;
-  height: 75vh;
+  width: 70em;
+  height: 25em;
   position: relative;
   box-sizing: border-box;
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .carousel > ul{
@@ -131,13 +135,13 @@ html::-webkit-scrollbar-track {
   /* top: 10rem; */
   left: 26.4rem;
   transition: 700ms opacity ease-in-out;
-  transition-delay: 200ms;
+  transition-delay: 250ms;
 }
 
 .slides > img{
   display: block;
-  width: 60%;
-  height: 70%;
+  width: 95%;
+  height: 90%;
   object-fit: cover;             /* it fits the imge in given width & height maintaining aspect ratio */
   object-position: center;
   position: absolute;
@@ -156,30 +160,30 @@ html::-webkit-scrollbar-track {
   background-color: none;
   border: none;
   font-size: 2rem;
-  top: 35%;
+  top: 43%;
   transform: translateY(-50%);
   color:rgba(22, 22, 22, 0.5);
   cursor: pointer;
-  border-radius: 50%;
-  padding: 0 0.5rem;
-  background-color: rgba(245, 235, 235, 0.2); 
+  border-radius: 60%;
+  padding: 0.5rem;
+  background-color: rgba(223, 219, 219, 0.1); 
 }
 
-.carousel-button:hover,
-.carousel-button:focus{
-  background-color: rgb(122, 122, 122);
+.carousel-button:hover{
+  background-color: rgb(236, 232, 232);
 }
 
 .carousel-button:focus{
+  background-color: rgb(216, 213, 213);
   font-size: 1.88rem;
 }
 
 .carousel-button.prev{
-  left: 23rem;
+  left: 24rem;
 }
 
 .carousel-button.next{
-  right: 22.5rem;
+  right: 0.1rem;
 }
 
 /* Home Page */
@@ -260,12 +264,12 @@ html::-webkit-scrollbar-track {
 }
 
 .hope {
-  margin: 2em 3em 2em 1.1em;
+  margin: 2em 3em 2em 1.25em;
   font-size: 2em;
 }
 
 .introcontainer p {
-  margin: 0 1em 2em 1.1em;
+  margin: 0 1em 2em 2.2em;
   color: black;
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
@@ -311,10 +315,6 @@ html::-webkit-scrollbar-track {
   font-variant: small-caps;
   margin: 1em 3.36em 0 4.2em;
   font-size: 1.352em;
-}
-
-.intropic::after:last-child{
-  -webkit-text-fill-color: initial;
 }
 
 /* Skills Page */
@@ -430,7 +430,7 @@ html::-webkit-scrollbar-track {
 
 .slides-header{
   margin: 10rem 0 0 0;
-  font-size: 2em;
+  font-size: 1.8em;
  }
 
 .contactform form {
@@ -605,36 +605,36 @@ html::-webkit-scrollbar-track {
     margin-left: 0em;
   }
   .carousel{
-    width: 100vw;
-    height: 100vh;
+    width: 26em;
+    height: 15em;
   }
   .slides-header{
-    margin: 4rem 0 0 0;
-    font-size: 2em;
+    margin: 2rem 0 0 0;
+    font-size: 1.6em;
    }
   .slides{
     /* top: 10rem; */
-    left: 1em;
+    left: 1.1em;
   }
   .slides > img{
     display: block;
     width: 95%;
-    height: 40%;
+    height: 95%;
     object-fit: cover;    
     object-position: center; 
     position: relative;
     z-index: 1;    
   }
   .carousel-button{
-    top: 15%;
+    top: 45%;
   }
    .carousel-button.prev{
-    left: .3rem;
+    left: .05rem;
     position: relative;
     z-index: 2;
   }
   .carousel-button.next{
-    right: .3rem;
+    right: .25rem;
     /* position: relative; */
     z-index: 2;
   }

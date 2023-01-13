@@ -32,3 +32,70 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
         })
 })
+
+const blogContainer1 = document.querySelector('.blog1');
+
+blogContainer1.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isreadmoreBtn = current.className.includes('readmore-btn');
+
+    if(!isreadmoreBtn) return;
+    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+
+    currenttext.classList.toggle('readmoretext--show');
+
+    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+})
+
+
+const blogContainer2 = document.querySelector('.blog2');
+
+blogContainer2.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isreadmoreBtn = current.className.includes('readmore-btn');
+
+    if(!isreadmoreBtn) return;
+    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+
+    currenttext.classList.toggle('readmoretext--show');
+
+    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+})
+
+
+const blogContainer3 = document.querySelector('.blog3');
+
+blogContainer3.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isreadmoreBtn = current.className.includes('readmore-btn');
+
+    if(!isreadmoreBtn) return;
+    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+
+    currenttext.classList.toggle('readmoretext--show');
+
+    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+})
+
+
+const blogContainer4 = document.querySelector('.blog4');
+
+blogContainer4.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isreadmoreBtn = current.className.includes('readmore-btn');
+
+    if(!isreadmoreBtn) return;
+    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+
+    currenttext.classList.toggle('readmoretext--show');
+
+    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+})

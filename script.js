@@ -46,7 +46,7 @@ blogContainer1.addEventListener('click', event=>{
 
     currenttext.classList.toggle('readmoretext--show');
 
-    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "..Read more";
 })
 
 
@@ -63,7 +63,7 @@ blogContainer2.addEventListener('click', event=>{
 
     currenttext.classList.toggle('readmoretext--show');
 
-    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "...Read more";
 })
 
 
@@ -80,7 +80,7 @@ blogContainer3.addEventListener('click', event=>{
 
     currenttext.classList.toggle('readmoretext--show');
 
-    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "...Read more";
 })
 
 
@@ -97,5 +97,13 @@ blogContainer4.addEventListener('click', event=>{
 
     currenttext.classList.toggle('readmoretext--show');
 
-    current.textContent = current.textContent.includes('...Read more') ? "...Read less" : "...Read more";
+    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "..Read more";
+
+    if(document.querySelector('blog4').classList.contains("fa-angle-double-down")){
+         return;
+    }
+    else{
+        currenttext.classList.toggle('readmoretext--show');
+        currenttext.i.toggle('fa-angle-double-up');
+    }
 })

@@ -10,7 +10,7 @@ document.querySelector('.hamburger').addEventListener("click", ()=>{
         document.querySelector('.ham').style.display='none';
         setTimeout(() =>{
             document.querySelector('.cross').style.display='inline'; 
-        }, 300);
+        }, 600);
     }
 })
 
@@ -107,3 +107,7 @@ blogContainer4.addEventListener('click', event=>{
         currenttext.i.toggle('fa-angle-double-up');
     }
 })
+
+function f(){
+    alert("Form Submitted Successfully!");
+}

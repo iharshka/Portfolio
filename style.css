@@ -20,7 +20,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  border-radius: 1.1em;
+  border-radius: 1.2em;
   background: linear-gradient(whitesmoke, #54d5fd);
   height: 1em;
 }
@@ -54,7 +54,7 @@ html::-webkit-scrollbar-track {
   /* width: 20vw; */
   /* position: absolute; */
   /* background-color: rgb(84, 213, 253, .5); */
-  background-color: rgb(84, 213, 253, .6);
+  background-color: rgb(84, 213, 253, .85);
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
   transition: transform .6s ease-in-out;
@@ -164,6 +164,8 @@ html::-webkit-scrollbar-track {
   left: 26.4rem;
   transition: 700ms opacity ease-in-out;
   transition-delay: 250ms;
+  animation-name: scroll;
+  animation-duration: 4s;
 }
 
 .slides > img{
@@ -215,6 +217,15 @@ html::-webkit-scrollbar-track {
 .carousel-button.next{
   right: 0.1rem;
 }
+
+/* @keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-150px * 9));
+  }
+} */
 
 /* Home Page */
 
@@ -304,6 +315,39 @@ html::-webkit-scrollbar-track {
   border: 3px solid #54d5fd;
   border-bottom: 0;
   /* filter: drop-shadow(-0px -1px 10px rgb(138, 181, 223)); */
+}
+
+.homebtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hbtndiv{
+  margin: 3em .7em 2em 0;
+}
+
+.hbtn{
+  border-style: none;
+  background-color: #54d5fd;
+  color: white;
+  font-size: 1em;
+  font-weight:500;
+  padding: .6em;
+  border-radius: 1.15em;
+  cursor: pointer;
+}
+
+.hbtn a{
+  text-decoration: none;
+}
+
+.hbtn:hover{
+ padding: .55em;
+ font-size: 0.98em;
+ color: rgb(24, 24, 24);
+ background-color: rgb(84, 213, 253, .8);
 }
 
 /* Intro Page */
@@ -792,6 +836,15 @@ html::-webkit-scrollbar-track {
   .slides-header{
     font-size: 1.2em;
    }
+   .hbtn{
+    font-size: .85em;
+    padding: .55em;
+    border-radius: 1.15em;
+  }
+  .hbtn:hover{
+   padding: .5em;
+   font-size: 0.82em;
+  }
    .btn {
     margin: 2em 0 5em 6em;
     font-size: 1.1em;
@@ -807,105 +860,7 @@ html::-webkit-scrollbar-track {
     font-size: 3em;
   }
 }
-@media (min-width: 767px){
+/* @media (min-width: 767px){
   .container {
     font-size: 9px;
-  }
-  .infoContainer {
-    height: 100vh;
-    margin-left: 3em;
-  }
-  .devPic img {
-    /* <img src="favicon2.webp" width="75">; */
-    height: 20em;
-    margin: -5em 0 0 0;
-  }
-  .carousel{
-    width: 45em;
-    bottom: 10;
-  }
-  .slides-header{
-    margin: 1rem 0 0 0;
-    font-size: 1.6em;
-   }
-  .slides{
-    /* top: 10rem; */
-    left: 8em;
-  }
-  .slides > img{
-    width: 35em;
-    height: 20em;
-    display: block;
-    object-fit: cover;    
-    object-position: center;
-    position: relative;
-    z-index: 1;    
-  }
-  .carousel-button{
-    top: 40%;
-  }
-  .carousel-button.prev{
-    left: 3em;
-    position: relative;
-    z-index: 2;
-  }
-  .carousel-button.next{
-    right: 0em;
-    z-index: 2;
-  }
-  .intropage {
-    flex-wrap: wrap;
-  }
-  .intropic img {
-    width: 35em;
-    margin-left: 4.1em;
-  }
-  .belowintropic {
-    margin: 1em 1.9em 3em 2.5em;
-    /* margin: 1em 2em 3em 1.1em; */
-  }
-  .skill{
-    background-color: #b3e8fa;
-    bottom: 0;
-  }
-  .skillcontainer,
-  .toolscontainer {
-    width: 80vw;
-    margin: 0em 4.4em;
-  }
-  .toolscontainer{
-    margin-bottom: 7em;
-  }
-  .contactpage {
-    display: flex;
-    flex-direction: column;
-  }
-  .btn {
-    margin: 2em 0 5em 6em;
-    font-size: 1.1em;
-    padding: 0.75em;
-    border-radius: 1.2em;
-  }
-   .btn:hover{
-    font-size: 1em;
-    margin: 2em 0 5em 6.5em;
-  }
-  .doodle img {
-    margin-left: 4em;
-    margin-top: 2.5em;
-    width: 35em;
-    border-radius: 1.5rem;
-  }
-  .belowdoodle {
-    margin: 0.3em 1em 2em 1em;
-    border-radius: 1.5rem;
-    font-size: 3em;
-  }
-  .blogitems{
-    margin: 2.5em;
-  }
-  .blog1, .blog2, .blog3, .blog4{
-    margin: 2em 1.5em;
-    border-radius: .4em;
-  }
-}
+  } */

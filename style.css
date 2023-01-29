@@ -330,7 +330,7 @@ html::-webkit-scrollbar-track {
 
 .hbtn{
   border-style: none;
-  background-color: #54d5fd;
+  background-image: linear-gradient(to bottom right, rgba(30, 144, 255, 0.5), rgb(30, 144, 255, 1));
   color: white;
   font-size: 1em;
   font-weight:500;
@@ -344,10 +344,11 @@ html::-webkit-scrollbar-track {
 }
 
 .hbtn:hover{
+ font-size: 0.97em;
  padding: .55em;
- font-size: 0.98em;
- color: rgb(24, 24, 24);
- background-color: rgb(84, 213, 253, .8);
+ background-color: rgb(84, 213, 253);
+ box-shadow: 1px 1px 5px #0984e3;
+ transition-delay: 300ms;
 }
 
 /* Intro Page */
@@ -575,7 +576,7 @@ html::-webkit-scrollbar-track {
 .slides-header {
   background-color: white;
   text-align: center;
-  color: dodgerblue;
+  color: rgb(30, 144, 255);
   font-size: 3em;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;

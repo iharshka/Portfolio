@@ -54,10 +54,10 @@ html::-webkit-scrollbar-track {
   /* width: 20vw; */
   /* position: absolute; */
   /* background-color: rgb(84, 213, 253, .5); */
-  background-color: rgb(84, 213, 253, .85);
+  background-color: rgb(84, 213, 253, 0.85);
   font-family: "Ubuntu", sans-serif;
   height: 100vh;
-  transition: transform .6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   position: relative;
   z-index: 2;
   position: fixed;
@@ -73,13 +73,13 @@ html::-webkit-scrollbar-track {
   padding: 30px 0;
 }
 
-.sidebar nav li a:focus{
+.sidebar nav li a:focus {
   font-weight: 600;
   font-size: 0.97em;
 }
 
 .sidebar nav li a {
-  border-radius: .3em;
+  border-radius: 0.3em;
   text-decoration: none;
   padding: 3px;
   color: black;
@@ -105,7 +105,7 @@ html::-webkit-scrollbar-track {
   padding: 5px;
 }
 
-.hamburger:hover{
+.hamburger:hover {
   background-color: #54d5fd;
   border-radius: 55%;
   padding: 6.6px;
@@ -118,31 +118,32 @@ html::-webkit-scrollbar-track {
   border-radius: 25%;
 }
 
-.cross:hover{
+.cross:hover {
   transition-duration: 250ms;
-  background-color: rgb(84, 213, 253, .35);
+  background-color: rgb(84, 213, 253, 0.35);
   border-radius: 50%;
 }
 
 /*Event Gallery*/
 
-*::after, *::before{
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-.body{
+.body {
   margin: 0;
 }
 
 /* .slides-header syled in contact page styles */
 
-.body > section{
+.body > section {
   height: fit-content;
   display: flex;
   justify-items: center;
 }
 
-.carousel{
+.carousel {
   width: 70em;
   height: 25em;
   position: relative;
@@ -150,13 +151,13 @@ html::-webkit-scrollbar-track {
   margin-top: 2rem;
 }
 
-.carousel > ul{
+.carousel > ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.slides{
+.slides {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -168,11 +169,11 @@ html::-webkit-scrollbar-track {
   animation-duration: 4s;
 }
 
-.slides > img{
+.slides > img {
   display: block;
   width: 95%;
   height: 90%;
-  object-fit: cover;             /* it fits the imge in given width & height maintaining aspect ratio */
+  object-fit: cover; /* it fits the imge in given width & height maintaining aspect ratio */
   object-position: center;
   position: absolute;
   z-index: 3;
@@ -180,11 +181,11 @@ html::-webkit-scrollbar-track {
 
 .slides[data-active] {
   opacity: 1;
-  /* transition: 200ms opacity ease-in; */ 
+  /* transition: 200ms opacity ease-in; */
   transition-delay: 0ms;
 }
 
-.carousel-button{
+.carousel-button {
   position: absolute;
   z-index: 2;
   background-color: none;
@@ -192,29 +193,29 @@ html::-webkit-scrollbar-track {
   font-size: 2rem;
   top: 43%;
   transform: translateY(-50%);
-  color:rgba(22, 22, 22, 0.5);
+  color: rgba(22, 22, 22, 0.5);
   cursor: pointer;
   border-radius: 60%;
   padding: 0.5rem;
-  background-color: rgba(223, 219, 219, 0.05); 
+  background-color: rgba(223, 219, 219, 0.05);
 }
 
-.carousel-button:hover{
-  background-color: rgba(223, 219, 219, 0.1); 
+.carousel-button:hover {
+  background-color: rgba(223, 219, 219, 0.1);
   transition-duration: 350ms;
 }
 
-.carousel-button:focus{
-  background-color: rgba(223, 219, 219, 0.3); 
+.carousel-button:focus {
+  background-color: rgba(223, 219, 219, 0.3);
   font-size: 1.88rem;
   transition-duration: 300ms;
 }
 
-.carousel-button.prev{
+.carousel-button.prev {
   left: 24rem;
 }
 
-.carousel-button.next{
+.carousel-button.next {
   right: 0.1rem;
 }
 
@@ -229,7 +230,7 @@ html::-webkit-scrollbar-track {
 
 /* Home Page */
 
-.home{
+.home {
   background-color: #c4edfa;
   bottom: 0;
 }
@@ -286,7 +287,7 @@ html::-webkit-scrollbar-track {
   border-width: 0px 1px 2px 0px;
 }
 
-.buttons button:hover{
+.buttons button:hover {
   font-size: 1.13em;
   padding: 0.89em;
   transition-duration: 350ms;
@@ -301,7 +302,7 @@ html::-webkit-scrollbar-track {
   border-width: thin; */
 }
 
-.devPic{
+.devPic {
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -317,43 +318,47 @@ html::-webkit-scrollbar-track {
   /* filter: drop-shadow(-0px -1px 10px rgb(138, 181, 223)); */
 }
 
-.homebtn{
+.homebtn {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.hbtndiv{
-  margin: 3em .7em 2em 0;
+.hbtndiv {
+  margin: 3em 0.7em 2em 0;
 }
 
-.hbtn{
+.hbtn {
   border-style: none;
-  background-image: linear-gradient(to bottom right, rgba(30, 144, 255, 0.5), rgb(30, 144, 255, 1));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(30, 144, 255, 0.5),
+    rgb(30, 144, 255, 1)
+  );
   color: white;
   font-size: 1em;
-  font-weight:500;
-  padding: .6em;
+  font-weight: 500;
+  padding: 0.6em;
   border-radius: 1.15em;
   cursor: pointer;
 }
 
-.hbtn a{
+.hbtn a {
   text-decoration: none;
 }
 
-.hbtn:hover{
- font-size: 0.97em;
- padding: .55em;
- background-color: rgb(84, 213, 253);
- box-shadow: 1px 1px 5px #0984e3;
- transition-delay: 300ms;
+.hbtn:hover {
+  font-size: 0.97em;
+  padding: 0.55em;
+  background-color: rgb(84, 213, 253);
+  box-shadow: 1px 1px 5px #0984e3;
+  transition-delay: 300ms;
 }
 
 /* Intro Page */
 
-.intro{
+.intro {
   /* background-color: #e4f7fd; */
   background-color: #c5e9f5;
   bottom: 0;
@@ -374,11 +379,11 @@ html::-webkit-scrollbar-track {
 .introcontainer p {
   background-color: white;
   margin: 0 3.5em 2em 3.2em;
-  padding: .6em;
+  padding: 0.6em;
   color: black;
   font-size: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: .4em;
+  border-radius: 0.4em;
 }
 
 .intropage {
@@ -398,12 +403,12 @@ html::-webkit-scrollbar-track {
 
 /* .belowintropic {
   /*intropic text*/
-  /* font-size: 1.4em;
+/* font-size: 1.4em;
   font-family: cursive;
   font-weight: 100;
   margin: 1em 2em 3em 1.1em;
   /* font-family: Arial, Helvetica, sans-serif; */
-  /* background: linear-gradient(to right, #000, #54d5fd);
+/* background: linear-gradient(to right, #000, #54d5fd);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; 
  } */
@@ -412,7 +417,7 @@ html::-webkit-scrollbar-track {
   -webkit-text-fill-color: initial;
 } */
 
-.intropic::after{
+.intropic::after {
   content: "'I like travelling to places, this is one of the evidencesツ I have a goal to travel whole India one day!'";
   display: table;
   background: linear-gradient(to right, #000, #54d5fd);
@@ -425,7 +430,7 @@ html::-webkit-scrollbar-track {
 
 /* Skills Page */
 
-.skill{
+.skill {
   background-color: #b3e8fa;
   bottom: 0;
 }
@@ -446,12 +451,12 @@ html::-webkit-scrollbar-track {
   row-gap: 1.2em;
   column-gap: 0.8em;
   place-items: center;
-  box-shadow: 1em .5em 2em rgb(24, 24, 24, .3);
+  box-shadow: 1em 0.5em 2em rgb(24, 24, 24, 0.3);
 }
 
-.toolscontainer{
+/* .toolscontainer {
   margin-bottom: 7em;
-}
+} */
 
 .skills,
 .tools {
@@ -469,16 +474,22 @@ html::-webkit-scrollbar-track {
   font-size: 1.5em;
 }
 
+#skills_page_resume {
+  margin-bottom: 6em;
+  position: relative;
+  left: 63%;
+}
+
 /* Blog Page */
 
-.blog{
+.blog {
   /* background-color: #e4f7fd; */
   background-color: #caeaf5;
   bottom: 0;
 }
 
 .blogcontainer h2 {
-  margin: 0 0 .8em 1em;
+  margin: 0 0 0.8em 1em;
   /* font-family: "Source Code Pro", monospace; */
   /* font-family: "Ubuntu", sans-serif; */
   font-family: "Sevillana", cursive;
@@ -493,7 +504,7 @@ html::-webkit-scrollbar-track {
   font-size: 1.3em;
 }
 
-.blogintro::first-letter{
+.blogintro::first-letter {
   font-size: x-large;
 }
 
@@ -506,15 +517,18 @@ html::-webkit-scrollbar-track {
   font-size: 1.2em;
 }
 
-.blogitems p{
- padding: 0em 1em 1em;
- line-height: 1.3em;
+.blogitems p {
+  padding: 0em 1em 1em;
+  line-height: 1.3em;
 }
 
-.blog1, .blog2, .blog3, .blog4{
+.blog1,
+.blog2,
+.blog3,
+.blog4 {
   background-color: white;
   margin: 2em 10em 2em 10em;
-  border-radius: .4em;
+  border-radius: 0.4em;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
@@ -525,26 +539,26 @@ html::-webkit-scrollbar-track {
   margin: 30px 0px 10px 0px;
 }
 
-.blogitems h3::first-letter{
+.blogitems h3::first-letter {
   font-size: large;
 }
 
-.twelvethclassblog{
- font-family: Arial, Helvetica, sans-serif;
- font-size: 1.1em;
+.twelvethclassblog {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
 }
 
-.readmore-btn{
+.readmore-btn {
   color: #0984e3;
   cursor: pointer;
   margin: 2px;
 }
 
-.readmore-text{
+.readmore-text {
   display: none;
 }
 
-.readmoretext--show{
+.readmoretext--show {
   display: inline;
 }
 
@@ -584,7 +598,7 @@ html::-webkit-scrollbar-track {
   border-bottom-right-radius: 2em;
 }
 
-.slides-header{
+.slides-header {
   margin: 2rem 0 0 0;
   font-size: 1.8em;
 }
@@ -598,14 +612,19 @@ html::-webkit-scrollbar-track {
   border-radius: 2em;
 }
 
+.contactform form input {
+  font-size: 0.82em;
+  color: cadetblue;
+}
+
 .contactform form div {
   padding: 8px 0px;
-  margin: .2em 1vw 0 .5em;
+  margin: 0.2em 1vw 0 0.5em;
 }
 
 #emailhelp {
   color: grey;
-  margin: 0 .4em;
+  margin: 0 0.4em;
 }
 
 .form-control {
@@ -624,7 +643,7 @@ html::-webkit-scrollbar-track {
 }
 
 .form-check-input {
-  margin: 0 1vw 0 .5em;
+  margin: 0 1vw 0 0.5em;
   width: 15px;
 }
 
@@ -646,10 +665,8 @@ html::-webkit-scrollbar-track {
 
 .btn:hover {
   transition-duration: 350ms;
-  font-size: 0.9em;
-  font-weight: 300;
-  padding: 0.6em;
-  border-radius: 1.3em;
+  font-size: 0.949em;
+  border-radius: 1.5em;
   color: white;
   background-color: rgb(7, 90, 173);
 }
@@ -747,7 +764,7 @@ html::-webkit-scrollbar-track {
     margin: 1em 1.9em 3em 2.5em;
     /* margin: 1em 2em 3em 1.1em; */
   }
-  .skill{
+  .skill {
     background-color: #b3e8fa;
     bottom: 0;
   }
@@ -756,8 +773,10 @@ html::-webkit-scrollbar-track {
     width: 80vw;
     margin: 0em 4.4em;
   }
-  .toolscontainer{
-    margin-bottom: 7em;
+  #skills_page_resume {
+    margin-bottom: 6em;
+    position: relative;
+    left: 39%;
   }
   .contactpage {
     display: flex;
@@ -769,7 +788,7 @@ html::-webkit-scrollbar-track {
     padding: 0.75em;
     border-radius: 1.2em;
   }
-   .btn:hover{
+  .btn:hover {
     font-size: 1em;
     margin: 2em 0 5em 6.5em;
   }
@@ -784,75 +803,78 @@ html::-webkit-scrollbar-track {
     border-radius: 1.5rem;
     font-size: 3em;
   }
-  .carousel{
+  .carousel {
     width: 26em;
     height: 15em;
   }
-  .slides-header{
+  .slides-header {
     margin: 1rem 0 0 0;
     font-size: 1.6em;
-   }
-  .slides{
+  }
+  .slides {
     /* top: 10rem; */
     left: 1.1em;
   }
-  .slides > img{
+  .slides > img {
     display: block;
     width: 95%;
     height: 95%;
-    object-fit: cover;    
+    object-fit: cover;
     object-position: center;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
   }
-  .carousel-button{
+  .carousel-button {
     top: 45%;
   }
-  .carousel-button.prev{
-    left: .05rem;
+  .carousel-button.prev {
+    left: 0.05rem;
     position: relative;
     z-index: 2;
   }
-  .carousel-button.next{
-    right: .25rem;
+  .carousel-button.next {
+    right: 0.25rem;
     /* position: relative; */
     z-index: 2;
   }
-  .blogitems{
+  .blogitems {
     margin: 2.5em;
   }
-  .blog1, .blog2, .blog3, .blog4{
+  .blog1,
+  .blog2,
+  .blog3,
+  .blog4 {
     margin: 2em 1.5em;
-    border-radius: .4em;
+    border-radius: 0.4em;
   }
 }
 @media (max-width: 380px) {
   .container {
     font-size: 7px;
   }
-  .carousel{
+  .carousel {
     width: 21em;
     height: 10em;
   }
-  .slides-header{
+  .slides-header {
     font-size: 1.2em;
-   }
-   .hbtn{
-    font-size: .85em;
-    padding: .55em;
+  }
+  .hbtn {
+    font-size: 0.85em;
+    padding: 0.55em;
     border-radius: 1.15em;
   }
-  .hbtn:hover{
-   padding: .5em;
-   font-size: 0.82em;
+  .hbtn:hover {
+    padding: 0.5em;
+    font-size: 0.82em;
   }
-   .btn {
+  .btn {
     margin: 2em 0 5em 6em;
     font-size: 1.1em;
     padding: 0.7em;
     border-radius: 1.1em;
   }
-   .btn:hover{
+  .btn:hover {
     margin: 2em 0 5em 8em;
   }
   .belowdoodle {

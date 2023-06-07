@@ -1,113 +1,118 @@
 console.log("Chal raha Hai!");
-document.querySelector('.cross').style.display='none';
-document.querySelector('.hamburger').addEventListener("click", ()=>{
-    document.querySelector('.sidebar').classList.toggle("sidebarGo");
-    if(document.querySelector('.sidebar').classList.contains("sidebarGo")){
-        document.querySelector('.cross').style.display='none'; 
-        document.querySelector('.ham').style.display='inline';
-    }
-    else{
-        document.querySelector('.ham').style.display='none';
-        setTimeout(() =>{
-            document.querySelector('.cross').style.display='inline'; 
-        }, 600);
-    }
-})
+document.querySelector(".cross").style.display = "none";
+document.querySelector(".hamburger").addEventListener("click", () => {
+  document.querySelector(".sidebar").classList.toggle("sidebarGo");
+  if (document.querySelector(".sidebar").classList.contains("sidebarGo")) {
+    document.querySelector(".cross").style.display = "none";
+    document.querySelector(".ham").style.display = "inline";
+  } else {
+    document.querySelector(".ham").style.display = "none";
+    setTimeout(() => {
+      document.querySelector(".cross").style.display = "inline";
+    }, 600);
+  }
+});
 
 /*Slider Js Code*/
 
-const buttons = document.querySelectorAll("[data-carousel-button]") //Attribute Selector intead of class selector coz it works fine with js 
+const buttons = document.querySelectorAll("[data-carousel-button]"); //Attribute Selector intead of class selector coz it works fine with js
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-        const slides = button.closest("[data-carousel]").querySelector("[data-slides]")
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]");
 
-        const activeSlide = slides.querySelector("[data-active]")
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-        if(newIndex < 0) newIndex = slides.children.length - 1
-        if(newIndex >= slides.children.length) newIndex = 0
+    const activeSlide = slides.querySelector("[data-active]");
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+    if (newIndex < 0) newIndex = slides.children.length - 1;
+    if (newIndex >= slides.children.length) newIndex = 0;
 
-        slides.children[newIndex].dataset.active = true
-        delete activeSlide.dataset.active
-        })
-})
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active;
+  });
+});
 
-const blogContainer1 = document.querySelector('.blog1');
+const blogContainer1 = document.querySelector(".blog1");
 
-blogContainer1.addEventListener('click', event=>{
+blogContainer1.addEventListener("click", (event) => {
+  const current = event.target;
 
-    const current = event.target;
+  const isreadmoreBtn = current.className.includes("readmore-btn");
 
-    const isreadmoreBtn = current.className.includes('readmore-btn');
+  if (!isreadmoreBtn) return;
+  const currenttext = event.target.parentNode.querySelector(".readmore-text");
 
-    if(!isreadmoreBtn) return;
-    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+  currenttext.classList.toggle("readmoretext--show");
 
-    currenttext.classList.toggle('readmoretext--show');
+  current.textContent = current.textContent.includes("Read more")
+    ? "..Read less"
+    : "..Read more";
+});
 
-    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "..Read more";
-})
+const blogContainer2 = document.querySelector(".blog2");
 
+blogContainer2.addEventListener("click", (event) => {
+  const current = event.target;
 
-const blogContainer2 = document.querySelector('.blog2');
+  const isreadmoreBtn = current.className.includes("readmore-btn");
 
-blogContainer2.addEventListener('click', event=>{
+  if (!isreadmoreBtn) return;
+  const currenttext = event.target.parentNode.querySelector(".readmore-text");
 
-    const current = event.target;
+  currenttext.classList.toggle("readmoretext--show");
 
-    const isreadmoreBtn = current.className.includes('readmore-btn');
+  current.textContent = current.textContent.includes("Read more")
+    ? "..Read less"
+    : "...Read more";
+});
 
-    if(!isreadmoreBtn) return;
-    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+const blogContainer3 = document.querySelector(".blog3");
 
-    currenttext.classList.toggle('readmoretext--show');
+blogContainer3.addEventListener("click", (event) => {
+  const current = event.target;
 
-    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "...Read more";
-})
+  const isreadmoreBtn = current.className.includes("readmore-btn");
 
+  if (!isreadmoreBtn) return;
+  const currenttext = event.target.parentNode.querySelector(".readmore-text");
 
-const blogContainer3 = document.querySelector('.blog3');
+  currenttext.classList.toggle("readmoretext--show");
 
-blogContainer3.addEventListener('click', event=>{
+  current.textContent = current.textContent.includes("Read more")
+    ? "..Read less"
+    : "...Read more";
+});
 
-    const current = event.target;
+const blogContainer4 = document.querySelector(".blog4");
 
-    const isreadmoreBtn = current.className.includes('readmore-btn');
+blogContainer4.addEventListener("click", (event) => {
+  const current = event.target;
 
-    if(!isreadmoreBtn) return;
-    const currenttext = event.target.parentNode.querySelector('.readmore-text');
+  const isreadmoreBtn = current.className.includes("readmore-btn");
 
-    currenttext.classList.toggle('readmoretext--show');
+  if (!isreadmoreBtn) return;
+  const currenttext = event.target.parentNode.querySelector(".readmore-text");
 
-    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "...Read more";
-})
+  currenttext.classList.toggle("readmoretext--show");
 
+  current.textContent = current.textContent.includes("Read more")
+    ? "..Read less"
+    : "..Read more";
 
-const blogContainer4 = document.querySelector('.blog4');
+  if (
+    document.querySelector("blog4").classList.contains("fa-angle-double-down")
+  ) {
+    return;
+  } else {
+    currenttext.classList.toggle("readmoretext--show");
+    currenttext.i.toggle("fa-angle-double-up");
+  }
+});
 
-blogContainer4.addEventListener('click', event=>{
-
-    const current = event.target;
-
-    const isreadmoreBtn = current.className.includes('readmore-btn');
-
-    if(!isreadmoreBtn) return;
-    const currenttext = event.target.parentNode.querySelector('.readmore-text');
-
-    currenttext.classList.toggle('readmoretext--show');
-
-    current.textContent = current.textContent.includes('Read more') ? "..Read less" : "..Read more";
-
-    if(document.querySelector('blog4').classList.contains("fa-angle-double-down")){
-         return;
-    }
-    else{
-        currenttext.classList.toggle('readmoretext--show');
-        currenttext.i.toggle('fa-angle-double-up');
-    }
-})
-
-function f(){
-    alert("Form Submitted Successfully!");
+function f() {
+  alert(
+    "Thank you for reaching out to me! This message is to let you know that your form has beem submitted and sent to Harsh successfully! He will try to reply as soon as he see the message. Till then, hold back and relax ;)"
+  );
 }

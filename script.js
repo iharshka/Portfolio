@@ -113,6 +113,6 @@ blogContainer4.addEventListener("click", (event) => {
 
 function f() {
   alert(
-    "Thank you for reaching out! This message is to let you know that your form has beem submitted and sent to Harsh successfully! He will try to reply as soon as he see the message. Till then, hold back and relax ;)"
+    "Thank you for reaching out! This message is to let you know that within a reCAPTCHA verfication in the next redirect page, your form will be submitted and sent to Harsh successfully! He will try to reply as soon as he see the message. Till then reCAPTCHA, hold back and relax ;)"
   );
 }

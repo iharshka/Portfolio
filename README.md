@@ -6,25 +6,36 @@ Developed a one‑stop place with personal information, blogs, and a working con
 
 One‑stop place containing my personal information and blogs with following pages:
 
-• Home
+### • Home
 
-<img src="./Screenshots/Screenshot%20(2110).png" width="450" height="250" /> <img src="./Screenshots/Screenshot%20(2111).png" width="450" height="250" />
+<p align="center">
+  <img src="./Screenshots/Screenshot%20(2110).png" width="450" height="250" /> <img src="./Screenshots/Screenshot%20(2111).png" width="450" height="250" />
+</p>
 
-• Intro
+### • Intro
 
-<img src="./Screenshots/Screenshot%20(2112).png" width="450" height="250" />
+<p align="center">
+ <img src="./Screenshots/Screenshot%20(2112).png" width="450" height="250" />
+</p>
 
-• Blog
+### • Blog
 
-<img src="./Screenshots/Screenshot%20(2113).png" width="450" height="250" /> <img src="./Screenshots/Screenshot%20(2114).png" width="450" height="250" />
+<p align="center">
+ <img src="./Screenshots/Screenshot%20(2113).png" width="450" height="250" /> <img src="./Screenshots/Screenshot%20(2114).png" width="450" height="250" />
+</p>
 
-• Skills
+### • Skills
 
+<p align="center">
 <img src="./Screenshots/Screenshot%20(2115).png" width="450" height="250" /> <img src="./Screenshots/Screenshot%20(2116).png" width="450" height="250" />
+</p>
 
-• Contact Us
+### • Contact Us
 
-<img src="./Screenshots/Screenshot%20(2115).png" width="450" height="250" />
+<p align="center">
+ <img src="./Screenshots/Screenshot%20(2115).png" width="450" height="250" />
+</p>
+
 
 <img src="./DevPics/favicon.webp" width="50" height="50" />
 
@@ -74,4 +85,4 @@ Head to iharshka.github.io/Portfolio for contact info.
 
 #### Where have you made this readme file?
 
-I have taken help of readme.so by<a href = "https://twitter.com/katherinecodes">Katherine Oelsner</a> to build this readme.
+I have taken help of readme.so by <a href = "https://twitter.com/katherinecodes">Katherine Oelsner</a> to build this readme.

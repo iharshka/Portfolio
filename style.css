@@ -752,7 +752,6 @@ html::-webkit-scrollbar-track {
   .buttons button {
     padding: 0.88em;
     font-size: 1.1em;
-    margin-bottom: 10em;
   }
   .intropage {
     flex-wrap: wrap;

@@ -2,7 +2,9 @@
 
 Developed a one‑stop place with personal information, blogs, and a working contact page. Hosted on GitHub. This is my portfolio website.<br>
 
-<b>Live here:</b> https://iharshka.github.io/Portfolio
+<b>Live link 1:</b> https://iharshka.me
+<b>Live link 2:</b> https://iharshka.vercel.app
+<b>Live link 3:</b> https://iharshka.github.io/Portfolio
 
 One‑stop place containing my personal information and blogs with following pages:
 
@@ -35,7 +37,6 @@ One‑stop place containing my personal information and blogs with following pag
 <p align="center">
  <img src="./Screenshots/Screenshot%20(2115).png" width="450" height="250" />
 </p>
-
 
 <img src="./DevPics/favicon.webp" width="50" height="50" />
 

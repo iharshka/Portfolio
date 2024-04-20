@@ -34,82 +34,24 @@ buttons.forEach((button) => {
   });
 });
 
-const blogContainer1 = document.querySelector(".blog1");
+for (let i = 1; i <= 6; i++) {
+  const blogContainer = document.querySelector(`.blog${i}`);
 
-blogContainer1.addEventListener("click", (event) => {
-  const current = event.target;
+  blogContainer.addEventListener("click", (event) => {
+    const current = event.target;
 
-  const isreadmoreBtn = current.className.includes("readmore-btn");
+    const isreadmoreBtn = current.className.includes("readmore-btn");
 
-  if (!isreadmoreBtn) return;
-  const currenttext = event.target.parentNode.querySelector(".readmore-text");
+    if (!isreadmoreBtn) return;
+    const currenttext = event.target.parentNode.querySelector(".readmore-text");
 
-  currenttext.classList.toggle("readmoretext--show");
-
-  current.textContent = current.textContent.includes("Read more")
-    ? "..Read less"
-    : "..Read more";
-});
-
-const blogContainer2 = document.querySelector(".blog2");
-
-blogContainer2.addEventListener("click", (event) => {
-  const current = event.target;
-
-  const isreadmoreBtn = current.className.includes("readmore-btn");
-
-  if (!isreadmoreBtn) return;
-  const currenttext = event.target.parentNode.querySelector(".readmore-text");
-
-  currenttext.classList.toggle("readmoretext--show");
-
-  current.textContent = current.textContent.includes("Read more")
-    ? "..Read less"
-    : "...Read more";
-});
-
-const blogContainer3 = document.querySelector(".blog3");
-
-blogContainer3.addEventListener("click", (event) => {
-  const current = event.target;
-
-  const isreadmoreBtn = current.className.includes("readmore-btn");
-
-  if (!isreadmoreBtn) return;
-  const currenttext = event.target.parentNode.querySelector(".readmore-text");
-
-  currenttext.classList.toggle("readmoretext--show");
-
-  current.textContent = current.textContent.includes("Read more")
-    ? "..Read less"
-    : "...Read more";
-});
-
-const blogContainer4 = document.querySelector(".blog4");
-
-blogContainer4.addEventListener("click", (event) => {
-  const current = event.target;
-
-  const isreadmoreBtn = current.className.includes("readmore-btn");
-
-  if (!isreadmoreBtn) return;
-  const currenttext = event.target.parentNode.querySelector(".readmore-text");
-
-  currenttext.classList.toggle("readmoretext--show");
-
-  current.textContent = current.textContent.includes("Read more")
-    ? "..Read less"
-    : "..Read more";
-
-  if (
-    document.querySelector("blog4").classList.contains("fa-angle-double-down")
-  ) {
-    return;
-  } else {
     currenttext.classList.toggle("readmoretext--show");
-    currenttext.i.toggle("fa-angle-double-up");
-  }
-});
+
+    current.textContent = current.textContent.includes("Read more")
+      ? "..Read less"
+      : "..Read more";
+  });
+}
 
 function f() {
   alert(
